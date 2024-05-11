@@ -1,20 +1,24 @@
-<ion-grid fixed>
-  <ion-row class="ion-justify-content-center">
-    <h1>Iniciar sesión</h1>
-  </ion-row>
-  <ion-row class="ion-justify-content-center">
-    <ion-col size="12" sizeMd="6">
-      <form>
-        <ion-item>
-          <ion-input type="text" label="Usuario:" labelPlacement="floating"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-input type="password" label="Contraseña:" labelPlacement="floating" placeholder="************"></ion-input>
-        </ion-item>
-        <ion-button expand="block" color="orange-1" shape="round" class="ion-margin-top">
-          Login
-        </ion-button>
-      </form>
-    </ion-col>
-  </ion-row>
-</ion-grid>
+<div>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <h1>Iniciar sesión</h1>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" sizeMd="6">
+        <ion-card>
+          <form class="ion-text-center ion-margin">  
+            <ion-item>
+              <ion-input type="text" label="Usuario:" labelPlacement="floating"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input type="password" label="Contraseña:" labelPlacement="floating" placeholder="************"></ion-input>
+            </ion-item>
+            <ion-button color="primary" shape="round" class="ion-margin-top">
+              Login
+            </ion-button>
+          </form>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

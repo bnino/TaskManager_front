@@ -1,0 +1,20 @@
+div {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ion-button {
+  //width: 50%;
+}
+
+ion-card {
+  border-radius: 1em;
+}
+
+@media (min-width: 768px) {
+  ion-card {
+    //width: 75%; /* Espaciado entre columnas para resolución md */
+  }
+}
