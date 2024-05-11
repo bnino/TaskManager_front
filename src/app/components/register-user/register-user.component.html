@@ -3,57 +3,60 @@
     <h1>Registrar nuevo usuario</h1>
   </ion-row>
   <ion-row class="ion-justify-content-center">
-    <ion-col size="12" sizeMd="4">
-      <form [formGroup]="formulario" action="">
-        <ion-item>
-          <ion-input type="number" label="Documento" labelPlacement="floating" formControlName="document"
-            placeholder="###"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-input type="text" label="Nombres" labelPlacement="floating" formControlName="firstname"
-            placeholder="..."></ion-input>
-        </ion-item>
-  
-        <ion-item>
-          <ion-input type="text" label="Apellidos" labelPlacement="floating" formControlName="lastname"
-            placeholder="..."></ion-input>
-        </ion-item>
-  
-        <ion-item>
-          <ion-input type="email" label="E-mail" labelPlacement="floating" formControlName="email"
-            placeholder="..."></ion-input>
-        </ion-item>
-  
-        <ion-item>
-          <ion-input type="text" label="usuario" labelPlacement="floating" formControlName="username"
-            placeholder="..."></ion-input>
-        </ion-item>
-  
-        <ion-item>
-          <ion-input type="password" label="Contraseña" labelPlacement="floating" formControlName="password"
-            placeholder="..."></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-input type="tel" label="Teléfono" labelPlacement="floating" formControlName="phone"
-            placeholder="###"></ion-input>
-        </ion-item>
-  
-        <ion-item>
-          <ion-select label="Tipo de Usuario" label-placement="floating" placeholder="Seleccione..."
-            formControlName="role">
-            <ion-select-option value="0">Superadministrador</ion-select-option>
-            <ion-select-option value="1">Administrador</ion-select-option>
-            <ion-select-option value="2">Usuario</ion-select-option>
-            <ion-select-option value="3">Usuario Soporte</ion-select-option>
-          </ion-select>
-        </ion-item>
-        <ion-row class="ion-justify-content-center">
-          <ion-col size="12">
-            <ion-button class="ion-margin-top ion-margin-start" (click)="onSubmit()">Enviar</ion-button>
-            <ion-button class="ion-margin-top ion-margin-start" (click)="Cargar()">Cargar</ion-button>
-          </ion-col>
-        </ion-row>
-      </form>
+    <ion-col size="12" sizeMd="8">
+      <ion-card>
+
+        <form [formGroup]="formulario" action="" class="ion-margin ion-justify-content-center">
+          <ion-item>
+            <ion-input type="number" label="Documento" labelPlacement="floating" formControlName="document"
+              placeholder="###"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="text" label="Nombres" labelPlacement="floating" formControlName="firstname"
+              placeholder="..."></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="text" label="Apellidos" labelPlacement="floating" formControlName="lastname"
+              placeholder="..."></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="email" label="E-mail" labelPlacement="floating" formControlName="email"
+              placeholder="..."></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="text" label="usuario" labelPlacement="floating" formControlName="username"
+              placeholder="..."></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="password" label="Contraseña" labelPlacement="floating" formControlName="password"
+              placeholder="..."></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="tel" label="Teléfono" labelPlacement="floating" formControlName="phone"
+              placeholder="###"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-select interface="popover" label="Tipo de Usuario" label-placement="floating" placeholder="Seleccione..."
+              formControlName="role">
+              <ion-select-option value="0">Superadministrador</ion-select-option>
+              <ion-select-option value="1">Administrador</ion-select-option>
+              <ion-select-option value="2">Usuario</ion-select-option>
+              <ion-select-option value="3">Usuario Soporte</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-row class="ion-justify-content-center">
+            <ion-col size="12" class="btns">
+              <ion-button shape="round" class="ion-margin-top ion-margin-start" (click)="onSubmit()">Enviar</ion-button>
+              <ion-button shape="round" class="ion-margin-top ion-margin-start" (click)="Cargar()">Cargar</ion-button>
+            </ion-col>
+          </ion-row>
+        </form>
+      </ion-card>
     </ion-col>
   </ion-row>
 </ion-grid>
