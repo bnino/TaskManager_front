@@ -1,2 +1,20 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+
+:root {
+	--ion-color-orange-1: #f0b456;
+	--ion-color-orange-1-rgb: 240,180,86;
+	--ion-color-orange-1-contrast: #000000;
+	--ion-color-orange-1-contrast-rgb: 0,0,0;
+	--ion-color-orange-1-shade: #d39e4c;
+	--ion-color-orange-1-tint: #f2bc67;
+}
+
+.ion-color-orange-1 {
+	--ion-color-base: var(--ion-color-orange-1);
+	--ion-color-base-rgb: var(--ion-color-orange-1-rgb);
+	--ion-color-contrast: var(--ion-color-orange-1-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-orange-1-contrast-rgb);
+	--ion-color-shade: var(--ion-color-orange-1-shade);
+	--ion-color-tint: var(--ion-color-orange-1-tint);
+}

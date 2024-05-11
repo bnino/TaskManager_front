@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { DataService } from './services/data.service';
+import { MenuOpts } from './interfaces/interface';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+
+  menuOptions: Observable<MenuOpts[]>;
+
+  constructor(private dataService: DataService) {
+    this.menuOptions = dataService.getMenuOpts();
+    
+  }
 }

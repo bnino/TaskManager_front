@@ -1,0 +1,12 @@
+[
+    {
+        "icon": "home-outline",
+        "name": "Inicio",
+        "redirectTo": "/home"
+    },
+    {
+        "icon": "person-outline",
+        "name": "Usuarios",
+        "redirectTo": "/users"
+    }
+]

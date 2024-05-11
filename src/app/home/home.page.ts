@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  formulario:string = 'login';
+  users: any;
+
   constructor() {}
+
+  chargeForm() {
+    this.formulario=='login' ? this.formulario = 'register': this.formulario='login'
+  }
 
 }
